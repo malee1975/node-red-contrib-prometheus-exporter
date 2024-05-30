@@ -1,5 +1,10 @@
 <!-- Prometheus metric configuration node -->
 <script type="text/html" data-template-name="prometheus-metric-config">
+  <style>
+  .red-ui-editor .form-row label {
+    width: 120px;
+  }
+</style>
   <div class="form-row">
     <label for="node-config-name"><i class="fa fa-line-chart"></i> Metric Name</label>
     <input type="text" id="node-config-input-name" placeholder="(mandatory)" />
@@ -72,9 +77,3 @@
     oneditprepare: onConfigEditPrepare
   });
 </script>
-
-<style>
-  .red-ui-editor .form-row label {
-    width: 120px;
-  }
-</style>
